@@ -1,61 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <title>SOHA / Home</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css\home.css">
     
 </head>
 <body>
-    <header>
-        <img src="/imagenes/logotipo.png" alt="logotipo SOHA" width="180px">
-        <nav>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <img src="/imagenes/logotipo.png" alt="logotipo SOHA" width="180px">
+            </div>
             
-            <ul>
-                <li><a href="#">Soluciones</a></li>
-                <li><a href="#">Instalacion</a></li>
-                <li><a href="#">Guias</a></li>
-                <li><a href="#">Tienda</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav class="menu">
+                <a href="#">Soluciones</a> 
+                <a href="#">Instalación</a>
+                <a href="#">Guias</a>
+                <a href="#">Tienda</a>
+            </nav>
+        </header>
+    
+        <main>
+            <article>
+                <div class="imag">
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Bsodwindows10.png/1200px-Bsodwindows10.png" alt="imagen errores "></a>
+                </div>
 
-    <main>
-        <h2>Errores Frecuentes de Software</h2>
-        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Bsodwindows10.png/1200px-Bsodwindows10.png" alt="imagen errores "width="400px"></a>
-        <p> Soluciona facilmente los errores mas frecuentes en windows con
-             sencillos pasos <a href="#">seguir leendo</a></p>
+                <h2>Errores Frecuentes de Software</h2>
 
-        <h2>Instala Windows</h2>
-        <a href="#"><img src="https://news.microsoft.com/wp-content/uploads/prod/sites/41/2015/01/Windows10_logo_1024x512-960x512.png" alt="imagen windows"width="400px"></a>
-        <p>Instala windows 10 en tu computadora con paso a paso y tener una 
-            configaracion optima <a href="#">seguir leendo</a></p>
+                <p> Soluciona facilmente los errores mas frecuentes en windows con
+                 sencillos pasos <a href="#">seguir leendo</a></p>
+            </article>
+            
+            <article>
+                <div class="imag">
+                    <a href="#"><img src="https://news.microsoft.com/wp-content/uploads/prod/sites/41/2015/01/Windows10_logo_1024x512-960x512.png" alt="imagen windows"></a>
+                </div>
 
-        <h2>Productos</h2>
-        <a href="#"><img src="https://assets.spartangeek.com/cc/choose-my-pc-mexico.jpg" alt="imagen productos "width="400px"></a>
-        <p>revisa los mejores productos de diferentes tiendas</p>
-    </main>
-
-    <footer>
-        <div class="menuf1">
-            <p>Mas contenido</p>
-            <ul>
-                <li><a href="#">Soluciones</a></li>
-                <li><a href="#">Instalacion</a></li>
-                <li><a href="#">Guias</a></li>
-            </ul>
-        </div>
-        <div class="menuf2">
-            <p>Siguenos</p>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-        </div>
-       <div class="soha"><p> <br> © SOHA 2021 / hardware y Software </p></div>
-        
-
-    </footer>
+                <h2>Instala Windows</h2>
+                
+                <p>Instala windows 10 en tu computadora con paso a paso y tener una 
+                configaracion optima <a href="#">seguir leendo</a></p>
+            </article>
+            <article>
+                <div class="imag">
+                    <a href="#"><img src="https://assets.spartangeek.com/cc/choose-my-pc-mexico.jpg" alt="imagen productos"></a>
+                </div>
+                <h2>Productos</h2>
+                
+                <p>revisa los mejores productos de diferentes tiendas</p>
+            </article>
+    
+            
+        </main>
+        <aside>
+            <div class="ad">
+                <p>espacio libre</p>
+            </div>
+            <div class="ad">
+                <p>espacio libre</p>
+            </div>
+        </aside>
+        <footer>
+            <div class="menuf1">
+                <p>Mas contenido</p>
+                <ul>
+                    <li><a href="#">Soluciones</a></li>
+                    <li><a href="#">Instalacion</a></li>
+                    <li><a href="#">Guias</a></li>
+                </ul>
+            </div>
+            <div class="menuf2">
+                <p>Siguenos</p>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                
+            </div>
+           <div class="soha"><p> <br> © SOHA 2021 / hardware y Software </p></div>
+            
+    
+        </footer>
+    </div>
 </body>
 </html>
