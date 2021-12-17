@@ -1,0 +1,64 @@
+h2{
+    background: #FBFFA3;
+    width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 35px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px  0px 0px black,
+               0px  2px 0px black,
+              -2px  0px 0px black,
+               0px -2px 0px black;
+}
+body{
+    background: #C6E872;
+    
+}
+
+.form{
+    background: #FBFFA3;
+    width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    display:block;
+    text-align: center;
+    
+
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="date"],
+.form input[list="usuario"],
+.form select,
+.form textarea{
+    width: 70%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #66D37E;
+    font-size: 16px;
+}
+
+.form select{
+    width: 74.5%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #66D37E;
+    font-size: 16px;
+}
+.form input[type="submit"]{
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid #66D37E;
+    cursor: pointer;
+}
+.form input[type="submit"]:hover{
+    background: #66D37E;
+    color: white;
+    
+}

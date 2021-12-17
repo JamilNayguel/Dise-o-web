@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulario</h2>
+    <form class="form" action="gracias.html" method="get">
+        
+        <input type="text" id="nombre" placeholder="Nombre completo" required pattern="[A-Za-z' ']{5,}" >
+
+        <input type="email" id="mail" placeholder="example@gmail.com">
+
+        <input type="tel" id="telefono" placeholder="telefono" required>
+
+        <input type="date" id="fecha" placeholder="fecha">
+
+        
+
+        
+        <input list="usuario" placeholder="Tipo de usuario">
+        <datalist id="usuario">
+            <option value="estándar"></option>
+            <option value="administrador"></option>
+            <option value="invitado"></option>
+
+        </datalist>
+        
+        <select name="pais" id="pais">
+            <option selected disabled>Seleccionar departamento </option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="La Paz"> La Paz</option>
+            <option value="Cochabamba">Cochabamba</option>
+            <option value="Beni">Beni</option>
+            <option value="Pando">Pando</option>
+            <option value="Tarija">Tarija</option>
+            <option value="Oruro">Oruro</option>
+            <option value="Potosi">Potosi</option>
+            <option value="Chuquisaca">Chuquisaca</option>
+
+        </select>
+
+        <!--<label for="op">comentario</label> -->
+        <textarea name="opinión" id="op" cols="30" rows="10" placeholder="comentario"></textarea><br>
+
+        <input type="submit" value="Send">
+
+    </form>
+
+</body>
+</html>
+<!-- 
+La página del formulario debe contener los siguientes elementos, tipos y
+atributos:
+a. nombre completo usando la entrada de text tipo y es required
+(obligatorio) y solo acepta caracteres alfabéticos con un mínimo de cinco
+caracteres usando un pattern de expresión regular.
+
+b. correo electrónico utilizando la entrada de tipo de email y use
+un placeholder para proporcionar un correo electrónico de demostración
+c. número de teléfono utilizando la entrada de tipo tel y es obligatorio
+
+d. fecha actual usando entrada de tipo date
+----------------------------------------------------------
+e. Tipo de usuario mediante la entrada con una list de atributos referencia a
+tipos de usuario.
+
+f. Lugar del que requiere información usando option con elementos
+desplegables con el nombre las ciudades de Bolivia.
+
+Agregue una primera opción con el texto "Seleccionar departamneto ..."
+que se muestra de manera predeterminada pero no seleccionable
+(deshabilitado).
+El resto de las opciones deben tener atributos de valor relevantes .
+
+g. información adicional o comentarios utilizando un textarea
+h. botón de envío de formulario utilizando la entrada de tipo submit
+-->
