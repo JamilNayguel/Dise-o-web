@@ -5,7 +5,9 @@
 }
 body{
     font-family: 'Work Sans', sans-serif;
-    background: #4D3E3E;
+    background-image: url("/imagenes/fondoprop.jpg");
+    background-size: cover;
+	background-attachment: fixed;
 }
 .contenedor{
     margin: auto;
@@ -23,6 +25,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    background: rgba(52, 52, 52,0.5);
 }
 header .menu a{
     color: #fff;
@@ -64,6 +67,7 @@ aside{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 aside .ad{
     font-size: 30px;
@@ -71,8 +75,8 @@ aside .ad{
     padding: 50px 0;
 }
 footer{
-    margin-top: 20px;
-    background: coral;
+    margin-top: 40px;
+    background: rgba(52, 52, 52,0.5);
     padding: 20px;
     margin-bottom: 20px;
     width: 100%;
@@ -80,6 +84,30 @@ footer{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    
 }
-
+footer .menuf {
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+}
+footer .menuf a{
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 16px;
+    display: block;
+}
+footer .menuf a:hover{
+    
+    color: #E9DCBE;
+    text-decoration:underline;
+    
+}
+footer .soha{
+    padding: 20px;
+    color: #fff;
+}
 
