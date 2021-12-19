@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Work Sans', sans-serif;
-    background-image: url("/imagenes/fondoprop.jpg");
+    background-image: url("imagenes/fondoprop.jpg");
     background-size: cover;
 	background-attachment: fixed;
     
@@ -207,7 +207,7 @@ footer .soha{
     header .menu .menu4{
         flex-direction: column;
         width: 0% 50%;
-        padding: 20px 60px;
+        padding: 20px 30px;
         text-align: center;
     }
     main{
@@ -229,6 +229,6 @@ footer .soha{
         flex-direction: column;
     }
     footer .soha{
-        font-size:12px ;
+        font-size: 12;
     }
 }
