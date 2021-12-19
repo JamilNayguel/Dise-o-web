@@ -8,14 +8,18 @@ body{
     background-image: url("/imagenes/fondoprop.jpg");
     background-size: cover;
 	background-attachment: fixed;
+    
 }
 .contenedor{
     margin: auto;
     width: 90%;
     max-width: 1000px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
+}
+.contenedor .logo{
+    padding: 0% 8%;
 }
 header{
     width: 100%;
@@ -25,21 +29,34 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background: rgba(52, 52, 52,0.5);
+    
+    background: linear-gradient(to top, #505c69da, #ff6b6bb9);
+}
+.wave{
+    width: 1000px;
+    position: relative;
+    bottom: 0;
+    top: 50px;
 }
 header .menu a{
-    color: #fff;
+    color: rgba(255, 255, 255);
     text-decoration: none;
     margin-right: 40px;
     font-size: 18px;
 }
 header .menu a:hover{
-    text-decoration: underline;
+    
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    color: rgba(52, 52, 52,0.9);
+    font-weight: 900;
+    
 }
 main{
     background: #FFF3CD;
     padding: 8%;      /*tamaño de imagen y letra del espacio*/
     width: 70%;
+    
 }
 main article .imag{
     margin-bottom: 20px;
@@ -55,28 +72,35 @@ main article h2{
 }
 main article p{
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 27px;
     text-align: justify;
 }
 aside{
     width: 30%;
-    background: #FFC38B;
+    background: linear-gradient(to bottom, #f8ecc5, #f05053);
     padding: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    
     
 }
 aside .ad{
-    font-size: 30px;
     text-align: center;
     padding: 50px 0;
+    background: rgba(253, 237, 222, 0.884);
+    border-radius: 30%;
+
+}
+aside .ad h3{
+    
+    font-size: 28px;
 }
 footer{
     margin-top: 40px;
-    background: rgba(52, 52, 52,0.5);
+    background: rgba(52, 52, 52,0.8);
     padding: 20px;
     margin-bottom: 20px;
     width: 100%;
@@ -92,8 +116,12 @@ footer .menuf {
     text-decoration: none;
     margin-right: 40px;
 }
+footer .menuf p {
+    font-size: 18px;
+    color: #fff;
+}
 footer .menuf a{
-    padding: 10px;
+    padding: 15px;
     color: #fff;
     text-decoration: none;
     margin-right: 40px;
