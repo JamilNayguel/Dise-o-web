@@ -138,4 +138,97 @@ footer .soha{
     padding: 20px;
     color: #fff;
 }
+@media screen and (max-width: 600px) {
+    header {
+		flex-direction:column;
+        width: 100%;
+	}
+    .wave {
+		flex-direction:column;
+        width: 100%;
+	}
 
+	header .menu {
+		width: 100%;
+		background: rgba(255,255,255,.2);
+		text-align: center;
+		padding: 20px 0px;
+        flex-direction: row;
+	}
+    
+
+	header .logo {
+		margin-bottom: 20px;
+	}
+    footer {
+		flex-direction:column;
+		
+	}
+    footer .soha {
+		order:2;
+        text-align: center;
+	}
+
+	footer .menuf {
+		order:1;
+		margin-bottom: 20px;
+	}
+	
+}
+
+@media screen and (max-width: 400px) {
+    header .menu {
+		background: rgba(255,255,255,.2);
+		text-align: center;
+		padding: 30px 10px;
+        flex-direction: row;
+        font-size: 12px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header .menu .menu1{
+        flex-direction: column;
+        width: 0% 50%;
+        padding: 20px 16px;
+        text-align: center;
+    }
+    header .menu .menu2{
+        flex-direction: column;
+        width: 0% 50%;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    header .menu .menu3{
+        flex-direction: column;
+        width: 0% 50%;
+        padding: 20px 14px;
+        text-align: center;
+    }
+    header .menu .menu4{
+        flex-direction: column;
+        width: 0% 50%;
+        padding: 20px 60px;
+        text-align: center;
+    }
+    main{
+        
+        padding: 8% ;      
+        width: 100%;
+        flex-direction: row;
+        }
+	aside {
+        width: 100%;
+        flex-wrap: wrap;
+	}
+    footer{
+        margin-top: 40px;
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .soha{
+        font-size: ;
+    }
+}
