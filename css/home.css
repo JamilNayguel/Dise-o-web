@@ -186,6 +186,7 @@ footer .soha{
         font-size: 12px;
         display: flex;
         flex-wrap: wrap;
+        
     }
     header .menu .menu1{
         flex-direction: column;
@@ -196,20 +197,23 @@ footer .soha{
     header .menu .menu2{
         flex-direction: column;
         width: 0% 50%;
-        padding: 20px 10px;
+        padding: 20px 0px;
         text-align: center;
     }
     header .menu .menu3{
         flex-direction: column;
         width: 0% 50%;
-        padding: 20px 14px;
+        padding: 20px 16px;
         text-align: center;
     }
     header .menu .menu4{
         flex-direction: column;
         width: 0% 50%;
-        padding: 20px 30px;
+        padding: 20px 45px;
         text-align: center;
+    }
+    header .menu a:hover{
+        padding: 20px 0px;
     }
     main{
         
