@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <title>SOHA / Home</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css\home.css">
-    
+    <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
     <div class="contenedor">
@@ -29,43 +28,58 @@
         </header>
     
         <main>
-            <article>
-                <div class="imag">
-                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Bsodwindows10.png/1200px-Bsodwindows10.png" alt="imagen errores "></a>
-                </div>
-
-                <h2>Errores Frecuentes de Software</h2>
-
-                <p> Soluciona facilmente los errores mas frecuentes en windows con
-                 sencillos pasos <a href="#">seguir leendo</a></p>
-            </article>
             
             <article>
-                <div class="imag">
-                    <a href="#"><img src="https://news.microsoft.com/wp-content/uploads/prod/sites/41/2015/01/Windows10_logo_1024x512-960x512.png" alt="imagen windows"></a>
-                </div>
+                
+                <h2>Formulario</h2>
+    <form class="form" action="gracias.html" method="get">
+        
+        <input type="text" id="nombre" placeholder="Nombre completo" required pattern="[A-Za-z' ']{5,}" >
 
-                <h2>Instala Windows</h2>
-                
-                <p>Instala windows 10 en tu computadora con paso a paso y tener una 
-                configaracion optima <a href="#">seguir leendo</a></p>
-            </article>
-            <article>
-                <div class="imag">
-                    <a href="#"><img src="https://assets.spartangeek.com/cc/choose-my-pc-mexico.jpg" alt="imagen productos"></a>
-                </div>
-                <h2>Productos</h2>
-                
-                <p>revisa los mejores productos de diferentes tiendas</p>
+        <input type="email" id="mail" placeholder="example@gmail.com">
+
+        <input type="tel" id="telefono" placeholder="telefono" required>
+
+        <input type="date" id="fecha" placeholder="fecha">
+
+        
+
+        
+        <input list="usuario" placeholder="Tipo de usuario">
+        <datalist id="usuario">
+            <option value="estándar"></option>
+            <option value="administrador"></option>
+            <option value="invitado"></option>
+
+        </datalist>
+        
+        <select name="pais" id="pais">
+            <option selected disabled>Seleccionar departamento </option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="La Paz"> La Paz</option>
+            <option value="Cochabamba">Cochabamba</option>
+            <option value="Beni">Beni</option>
+            <option value="Pando">Pando</option>
+            <option value="Tarija">Tarija</option>
+            <option value="Oruro">Oruro</option>
+            <option value="Potosi">Potosi</option>
+            <option value="Chuquisaca">Chuquisaca</option>
+
+        </select>
+
+        <textarea name="opinión" id="op" cols="30" rows="10" placeholder="comentario"></textarea><br>
+
+        <input type="submit" value="Send">
+
+    </form>
             </article>
     
             
         </main>
         <aside>
             <div class="ad">
-                <h3>Formulario</h3>
-                <p>Ingrese al <a href="formulario.html">Formulario</a></p>
-
+                <h3>espacio libre</h3>
+                <p>Espacio para ingresar texto </p>
             </div>
             <br>
             <div class="ad">
