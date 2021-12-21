@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-image: url("https://images.pexels.com/photos/3848158/pexels-photo-3848158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+	background-attachment: fixed;
+    
+}
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.contenedor .logo{
+    padding: 0% 8%;
+}
+header{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: linear-gradient(to top, #505c69da, #ff6b6bb9);
+}
+.wave{
+    width: 1000px;
+    position: relative;
+    bottom: 0;
+    top: 50px;
+}
+header .menu a{
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+}
+header .menu a:hover{
+    
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    color: rgba(52, 52, 52,0.9);
+    font-weight: 900;
+    
+}
+main{
+    background: #FFF3CD;
+    padding: 8%;      /*tamaño de imagen y letra del espacio*/
+    width: 70%;
+    
+}
+main article .imag{
+    margin-bottom: 20px;
+}
+main article .imag img{
+    vertical-align: top;
+    width: 100%;
+}
+main article h2{
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 32px;
+}
+main article p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: justify;
+}
+main article{
+    background: linear-gradient(to right, #c6ffddde, #fbd886de, #f7797dde);
+    border-radius: 10px;
+}
+aside{
+    width: 30%;
+    background: linear-gradient(to bottom, #f8ecc5, #f05053);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    
+}
+aside .ad{
+    text-align: center;
+    padding: 50px 0;
+    background: rgba(253, 237, 222, 0.884);
+    border-radius: 0,5;
+
+}
+aside .ad h3{
+    
+    font-size: 28px;
+}
+footer{
+    margin-top: 40px;
+    background: rgba(52, 52, 52,0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+footer .menuf {
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+}
+footer .menuf p {
+    font-size: 18px;
+    color: #fff;
+}
+footer .menuf a{
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 16px;
+    display: block;
+}
+footer .menuf a:hover{
+    
+    color: #E9DCBE;
+    text-decoration:underline;
+    
+}
+footer .soha{
+    padding: 20px;
+    color: #fff;
+}
+@media screen and (max-width: 600px) {
+    header {
+		flex-direction:column;
+        width: 100%;
+	}
+    .wave {
+		flex-direction:column;
+        width: 100%;
+	}
+
+	header .menu {
+		width: 100%;
+		background: rgba(255,255,255,.2);
+		text-align: center;
+		padding: 20px 0px;
+        flex-direction: row;
+	}
+    
+
+	header .logo {
+		margin-bottom: 20px;
+	}
+    footer {
+		flex-direction:column;
+		
+	}
+    footer .soha {
+		order:2;
+        text-align: center;
+	}
+
+	footer .menuf {
+		order:1;
+		margin-bottom: 20px;
+	}
+	
+}
+
+@media screen and (max-width: 400px) {
+    header .menu {
+		background: rgba(255,255,255,.2);
+		text-align: center;
+		padding: 30px 10px;
+        flex-direction: row;
+        font-size: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    header .menu .menu1{
+        flex-direction: column;
+        width: 0% 50%;
+        padding: 20px 16px;
+        text-align: center;
+    }
+    header .menu .menu2{
+        flex-direction: column;
+        width: 0% 50%;
+        padding: 20px 0px;
+        text-align: center;
+    }
+    header .menu .menu3{
+        flex-direction: column;
+        width: 0% 50%;
+        padding: 20px 16px;
+        text-align: center;
+    }
+    header .menu .menu4{
+        flex-direction: column;
+        width: 0% 50%;
+        padding: 20px 45px;
+        text-align: center;
+    }
+    header .menu a:hover{
+        padding: 20px 0px;
+    }
+    main{
+        
+        padding: 8% ;      
+        width: 100%;
+        flex-direction: row;
+        }
+	aside {
+        width: 100%;
+        flex-wrap: wrap;
+	}
+    footer{
+        margin-top: 40px;
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .soha{
+        font-size: 12px;
+    }
+}
+
+
+.form{
+    
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    display:block;
+    text-align: center;
+    
+
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="date"],
+.form input[list="usuario"],
+.form select,
+.form textarea{
+    width: 70%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #66D37E;
+    font-size: 16px;
+}
+
+.form select{
+    width: 74.5%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #66D37E;
+    font-size: 16px;
+}
+.form input[type="submit"]{
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid #66D37E;
+    cursor: pointer;
+}
+.form input[type="submit"]:hover{
+    background: #66D37E;
+    color: white;
+    
+}
