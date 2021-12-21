@@ -39,19 +39,52 @@ header{
     bottom: 0;
     top: 50px;
 }
-header .menu a{
-    color: rgba(255, 255, 255);
-    text-decoration: none;
-    margin-right: 40px;
+
+
+ul, ol {
+    list-style:none;
+}
+
+.menu > li {
+    float:left;
+    
     font-size: 18px;
 }
-header .menu a:hover{
-    
-    background: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    color: rgba(52, 52, 52,0.9);
-    font-weight: 900;
-    
+
+.menu li a {
+    color:#fff;
+    text-decoration:none;
+    padding:10px 20px;
+    display:block;
+}
+
+.menu li a:hover {
+    background-color:#43434396;
+}
+
+.menu li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.menu li:hover > ul {
+    display:block;
+}
+
+.menu li ul li {
+    position:relative;
+}
+
+.menu li ul li ul {
+    right:-140px;
+    top:0px;
+}
+li ul li a{
+    background: rgba(52, 52, 52,0.8);
+
+
+
 }
 main{
     background: #FFF3CD;
@@ -245,11 +278,13 @@ footer .soha{
 
 .form{
     
-    width: 600px;
+    width: 140%;
     margin: 20px auto;
     padding: 20px;
     border-radius: 5px;
-    display:block;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
     text-align: center;
     
 
@@ -268,13 +303,6 @@ footer .soha{
     font-size: 16px;
 }
 
-.form select{
-    width: 74.5%;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 2px solid #66D37E;
-    font-size: 16px;
-}
 .form input[type="submit"]{
     width: 200px;
     margin: 0 auto;
@@ -286,4 +314,7 @@ footer .soha{
     background: #66D37E;
     color: white;
     
+}
+main article h2{
+    text-align: center;
 }

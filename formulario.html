@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <title>Formulario</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="css/formulario.css">
 </head>
 <body>
     <div class="contenedor">
@@ -18,12 +18,38 @@
                 <img src="imagenes/logotipo.png" alt="logotipo SOHA" width="260px">
             </div>
             
-            <nav class="menu">
-                <a class="menu1" href="#">Soluciones</a> 
-                <a class="menu2" href="#">Instalación</a>
-                <a class="menu3" href="#">Guias</a>
-                <a class="menu4" href="#">Tienda</a>
-            </nav>
+            <nav>
+                <ul class="menu">
+                    <li><a href="">Soluciones</a>
+                        <ul>
+                            <li><a href="">Submenu1</a></li>
+                            <li><a href="">Submenu2</a></li>
+                            <li><a href="">Submenu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Instalación</a>
+                        <ul>
+                            <li><a href="">Submenu1</a></li>
+                            <li><a href="">Submenu2</a></li>
+                            <li><a href="">Submenu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Guias</a>
+                        <ul>
+                            <li><a href="">Submenu1</a></li>
+                            <li><a href="">Submenu2</a></li>
+                            <li><a href="">Submenu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Tienda</a>
+                        <ul>
+                            <li><a href="">Submenu1</a></li>
+                            <li><a href="">Submenu2</a></li>
+                            <li><a href="">Submenu3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+           </nav>
             <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 140" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-1.41,0.33 C149.99,150.00 349.20,-49.98 500.84,53.61 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FFF3CD;"></path></svg></div>
         </header>
     
@@ -32,46 +58,46 @@
             <article>
                 
                 <h2>Formulario</h2>
-    <form class="form" action="gracias.html" method="get">
-        
-        <input type="text" id="nombre" placeholder="Nombre completo" required pattern="[A-Za-z' ']{5,}" >
+                <form class="form" action="gracias.html" method="get">
+                    
+                    <input type="text" id="nombre" placeholder="Nombre completo" required pattern="[A-Za-z' ']{5,}" >
 
-        <input type="email" id="mail" placeholder="example@gmail.com">
+                    <input type="email" id="mail" placeholder="example@gmail.com">
 
-        <input type="tel" id="telefono" placeholder="telefono" required>
+                    <input type="tel" id="telefono" placeholder="telefono" required>
 
-        <input type="date" id="fecha" placeholder="fecha">
+                    <input type="date" id="fecha" placeholder="fecha">
 
-        
+                    
 
-        
-        <input list="usuario" placeholder="Tipo de usuario">
-        <datalist id="usuario">
-            <option value="estándar"></option>
-            <option value="administrador"></option>
-            <option value="invitado"></option>
+                    
+                    <input list="usuario" placeholder="Tipo de usuario">
+                    <datalist id="usuario">
+                        <option value="estándar"></option>
+                        <option value="administrador"></option>
+                        <option value="invitado"></option>
 
-        </datalist>
-        
-        <select name="pais" id="pais">
-            <option selected disabled>Seleccionar departamento </option>
-            <option value="Santa Cruz">Santa Cruz</option>
-            <option value="La Paz"> La Paz</option>
-            <option value="Cochabamba">Cochabamba</option>
-            <option value="Beni">Beni</option>
-            <option value="Pando">Pando</option>
-            <option value="Tarija">Tarija</option>
-            <option value="Oruro">Oruro</option>
-            <option value="Potosi">Potosi</option>
-            <option value="Chuquisaca">Chuquisaca</option>
+                    </datalist>
+                    
+                    <select name="pais" id="pais">
+                        <option selected disabled>Departamento </option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="La Paz"> La Paz</option>
+                        <option value="Cochabamba">Cochabamba</option>
+                        <option value="Beni">Beni</option>
+                        <option value="Pando">Pando</option>
+                        <option value="Tarija">Tarija</option>
+                        <option value="Oruro">Oruro</option>
+                        <option value="Potosi">Potosi</option>
+                        <option value="Chuquisaca">Chuquisaca</option>
 
-        </select>
+                    </select>
 
-        <textarea name="opinión" id="op" cols="30" rows="10" placeholder="comentario"></textarea><br>
+                    <textarea name="opinión" id="op" cols="30" rows="10" placeholder="comentario"></textarea><br>
 
-        <input type="submit" value="Send">
+                    <input type="submit" value="Send">
 
-    </form>
+                </form>
             </article>
     
             
