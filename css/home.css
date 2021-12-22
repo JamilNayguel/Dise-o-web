@@ -83,7 +83,8 @@ ul, ol {
 li ul li a{
     background: rgba(52, 52, 52,0.8);
 }
-/*-------------------------------------------*/
+
+
 main{
     background: #FFF3CD;
     padding: 8%;      /*tamaño de imagen y letra del espacio*/
@@ -111,6 +112,10 @@ main article p{
 main article{
     background: linear-gradient(to right, #c6ffddde, #fbd886de, #f7797dde);
     border-radius: 10px;
+}
+.autor{
+    font-style: italic;
+    font-weight: bold;
 }
 aside{
     width: 30%;
