@@ -215,37 +215,14 @@ footer .soha{
     header .menu {
 		background: rgba(255,255,255,.2);
 		text-align: center;
-		padding: 30px 10px;
-        flex-direction: row;
+		padding: 30px 90px;
+        flex-direction: column;
         font-size: 12px;
         display: flex;
         flex-wrap: wrap;
         
     }
-    header .menu .menu1{
-        flex-direction: column;
-        width: 0% 50%;
-        padding: 20px 16px;
-        text-align: center;
-    }
-    header .menu .menu2{
-        flex-direction: column;
-        width: 0% 50%;
-        padding: 20px 0px;
-        text-align: center;
-    }
-    header .menu .menu3{
-        flex-direction: column;
-        width: 0% 50%;
-        padding: 20px 16px;
-        text-align: center;
-    }
-    header .menu .menu4{
-        flex-direction: column;
-        width: 0% 50%;
-        padding: 20px 45px;
-        text-align: center;
-    }
+    
     header .menu a:hover{
         padding: 20px 0px;
     }
