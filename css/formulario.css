@@ -124,7 +124,7 @@ aside{
 }
 aside .ad{
     text-align: center;
-    padding: 50px 0;
+    padding: 40px 10px;
     background: rgba(253, 237, 222, 0.884);
     border-radius: 0,5;
 
@@ -290,8 +290,6 @@ footer .soha{
 .form input[type="email"],
 .form input[type="tel"],
 .form input[type="date"],
-.form input[list="usuario"],
-.form select,
 .form textarea{
     width: 70%;
     padding: 20px;
@@ -302,10 +300,11 @@ footer .soha{
 
 .form input[type="submit"]{
     width: 200px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     padding: 10px;
     border: 2px solid #66D37E;
     cursor: pointer;
+    align-items: center;
 }
 .form input[type="submit"]:hover{
     background: #66D37E;

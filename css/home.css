@@ -100,11 +100,13 @@ main article .imag img{
 }
 main article h2{
     margin-bottom: 20px;
+    padding: 0px 10px;
     font-weight: normal;
-    font-size: 32px;
+    font-size: 30px;
 }
 main article p{
     margin-bottom: 20px;
+    padding: 20px 10px;
     font-size: 15px;
     line-height: 27px;
     text-align: justify;
@@ -116,6 +118,10 @@ main article{
 .autor{
     font-style: italic;
     font-weight: bold;
+}
+.qr img{
+width: 20%;
+padding: 30%;
 }
 aside{
     width: 30%;
@@ -129,8 +135,8 @@ aside{
     
 }
 aside .ad{
-    text-align: center;
-    padding: 50px 0;
+    text-align: justify;
+    padding: 40px 10px;
     background: rgba(253, 237, 222, 0.884);
     border-radius: 0,5;
 
